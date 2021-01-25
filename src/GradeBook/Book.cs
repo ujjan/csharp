@@ -3,60 +3,43 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    internal class Book
+
+    
+    public class Book
     {
+
+        private string name;
+       private List<double> grades;
         public Book(string name)
         {
             grades = new List<double>();
             this.name = name;
         }
-      private double result = 0;
-      private List<double> grades;
-      private string name;
-      private double hiGrade = double.MinValue;
-      private double lowestGrade = double.MaxValue;
-       
-       public double AverageGrade()
-       {
-
-            foreach (var number  in grades){
-                result += number;
-            }
-
-            result = result / grades.Count;
-            return result;
-
-       }
-
+      
        public void AddGrade(double num)
        {
            grades.Add(num);
        }
 
-       public double HighGrade()
-       {
-           foreach (var item in grades)
-           {
-               hiGrade = Math.Max(item, hiGrade);
-           }
+       
 
-           return hiGrade;
-       }
-
-       public double LowestGrade()
+       public Statistics GetStatics()
        {
-           foreach (var item in grades)
-           {
-               lowestGrade = Math.Min(lowestGrade, item);
-           }
-           return lowestGrade;
-       }
+            var result = new Statistics();
+            result.High = double.MinValue;
+            result.Low = double.MaxValue;
+           
 
-       public void ShowStatics()
-       {
-            System.Console.WriteLine($"The average Grade is: {AverageGrade()}");
-            System.Console.WriteLine($"Highets grade: {HighGrade()}");
-            System.Console.WriteLine($"Lowest grade: {LowestGrade()}");
+            foreach (var number  in grades)
+            {
+                result.Average += number;
+                result.Low = Math.Min(result.Low, number);
+                result.High = Math.Max( result.High, number);
+            }
+            result.Average = result.Average/ grades.Count;
+
+            return result;
+       
        }
     }
 }

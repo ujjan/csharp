@@ -10,12 +10,14 @@ namespace GradeBook
 
             Book book = new Book("Computer");
 
-            book.AddGrade(99.5);
-            book.AddGrade(57.5);
-            book.AddGrade(34.5);
-            book.AddGrade(67.5);
-            book.AddGrade(99.6);
-            book.ShowStatics();
+            book.AddGrade(50.0);
+            book.AddGrade(51.0);
+            System.Console.WriteLine( book.GetStatics().High);
+            System.Console.WriteLine( book.GetStatics().Low);
+            System.Console.WriteLine( book.GetStatics().Average);
+
+
+
         }
 
     }
