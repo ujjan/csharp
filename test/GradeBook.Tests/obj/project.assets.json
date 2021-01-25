@@ -6537,11 +6537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ali\\Desktop\\cc\\csharp\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Ali\\Desktop\\cc\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "projectName": "GradeBook.Tests",
-      "projectPath": "C:\\Users\\Ali\\Desktop\\cc\\csharp\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
+      "projectPath": "C:\\Users\\Ali\\Desktop\\cc\\gradebook\\test\\GradeBook.Tests\\GradeBook.Tests.csproj",
       "packagesPath": "C:\\Users\\Ali\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ali\\Desktop\\cc\\csharp\\test\\GradeBook.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Ali\\Desktop\\cc\\gradebook\\test\\GradeBook.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6562,8 +6562,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Ali\\Desktop\\cc\\csharp\\src\\GradeBook\\GradeBook.csproj": {
-              "projectPath": "C:\\Users\\Ali\\Desktop\\cc\\csharp\\src\\GradeBook\\GradeBook.csproj"
+            "C:\\Users\\Ali\\Desktop\\cc\\gradebook\\src\\GradeBook\\GradeBook.csproj": {
+              "projectPath": "C:\\Users\\Ali\\Desktop\\cc\\gradebook\\src\\GradeBook\\GradeBook.csproj"
             }
           }
         }
