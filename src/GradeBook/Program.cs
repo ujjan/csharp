@@ -8,20 +8,14 @@ namespace GradeBook
         static void Main(string[] args)
         {
 
-            double result = 0;
-            List<double> grades = new List<double>() {12.4, 23.6, 13.5};
+            Book book = new Book("Computer");
 
-                grades.Add(.5);
-
-            foreach (var number  in grades){
-                result += number;
-            }
-
-            result = result / grades.Count;
-
-            System.Console.WriteLine($"The average Grade is: {result:N2}");
-
-
+            book.AddGrade(99.5);
+            book.AddGrade(57.5);
+            book.AddGrade(34.5);
+            book.AddGrade(67.5);
+            book.AddGrade(99.6);
+            book.ShowStatics();
         }
 
     }
